@@ -1522,20 +1522,21 @@
     @endif
 
     @stack('styles')
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.0/dist/cdn.min.js"></script>
 </head>
 
 <body>
 
-    <header>
+    <header class="p-7">
         <h1>My Laravel Project</h1>
         <hr>
     </header>
 
-    <main>
+    <main class="p-7">
         @yield('content')
     </main>
 
-    <footer>
+    <footer class="flex justity-center  p-7 ">
         <hr>
         <p>© {{ date('Y') }} My Laravel App</p>
     </footer>
